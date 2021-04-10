@@ -1,0 +1,23 @@
+{
+  "name": "gameoflifekatatdd",
+  "version": "1.0.0",
+  "description": "GameOfLife kata focusing on TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iLLoReal/GameOfLife.git"
+  },
+  "keywords": [
+    "GameOfLife",
+    "TDD",
+    "TypeScript",
+    "React.JS",
+    "Enzyme",
+    "Jest"
+  ],
+  "author": "iLLo",
+  "license": "ISC"
+}
