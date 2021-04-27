@@ -6,17 +6,13 @@ import App from '../components/App';
 import Enzyme, { shallow } from 'enzyme';
 Enzyme.configure({ adapter: new Adapter() })
 
-const wrapper = shallow(<App />);
+describe('(Component) App', () => {
+  const AppWrapper = shallow(<App />);
 
-describe('(Component) App', () => {
- 
   it('renders without exploding', () => {
-    expect(wrapper).toHaveLength(1);
-  });
-})
-describe('(Component) App', () => {
- 
-  it('renders "Basic component"', () => {
-    expect(wrapper.text() === ("basic component")).toBe(true);
-  });
+    expect(AppWrapper).toHaveLength(1);
+  })
+  it ('displays "Basic component"', () => {
+    expect(AppWrapper.text() === 'Basic component').toBe(true);
+  })
 })
